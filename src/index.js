@@ -1,5 +1,6 @@
 import "./index.css";
 import { createMenuModule } from './menu/menu.module';
+import { createAboutModule } from "./about/about.module";
 
 
 
@@ -26,4 +27,7 @@ menuButton.addEventListener("click", () => {
     createMenuModule();
 });
 
-
+aboutButton.addEventListener("click", () => {
+    container.textContent = "";
+    createAboutModule();
+});
