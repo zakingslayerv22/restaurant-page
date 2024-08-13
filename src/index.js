@@ -1,4 +1,8 @@
 import "./index.css";
+import { createMenuModule } from './menu/menu.module';
+
+
+
 
 const container = document.querySelector("#content");
 
@@ -16,5 +20,10 @@ function createHomeModule() {
 }
 
 createHomeModule()
+
+menuButton.addEventListener("click", () => {
+    container.textContent = "";
+    createMenuModule();
+});
 
 
