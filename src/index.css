@@ -1,3 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid salmon;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+nav, .footer {
+    padding: 2.5rem;
+}
+
 #content {
     color: green;
 }
