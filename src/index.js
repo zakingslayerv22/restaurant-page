@@ -22,6 +22,11 @@ function createHomeModule() {
 
 createHomeModule()
 
+homeButton.addEventListener ("click", () => {
+    container.textContent = "";
+    createHomeModule();
+});
+
 menuButton.addEventListener("click", () => {
     container.textContent = "";
     createMenuModule();
