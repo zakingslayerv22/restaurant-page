@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 1px solid salmon;
@@ -7,7 +8,7 @@
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    
+    gap: 2rem;
 }
 
 nav {
@@ -20,6 +21,19 @@ nav {
 nav, .footer {
     padding: 2.5rem;
 }
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2.5rem;
+}
+
+.hero-left-container, .hero-image-container {
+    flex-basis: 400px;
+}
+
 
 #content {
     color: green;
