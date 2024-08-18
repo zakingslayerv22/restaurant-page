@@ -1,4 +1,5 @@
 import "./index.css";
+import HeroImage from './home-assets/images/jed-owen-O4wSmNb6w18-unsplash.webp';
 import { createMenuModule } from './menu/menu.module';
 import { createAboutModule } from "./about/about.module";
 
@@ -39,13 +40,18 @@ function createHomeModule() {
 
     const heroRight = document.createElement("div");
     heroRight.classList.add("hero-image-container");
-    heroRight.textContent = `I am waiting for my image`;
+
+
+    const heroImage = new Image();
+    heroImage.classList.add('hero-image')
+    heroImage.src = HeroImage;
 
 
 
     container.appendChild(homeContainer);
     homeContainer.append(heroLeft, heroRight);
     heroLeft.append(heroText, heroButton);
+    heroRight.appendChild(heroImage);
     heroText.append(heroH1, heroParagraph);
 }
 
