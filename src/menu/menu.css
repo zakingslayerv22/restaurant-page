@@ -1,3 +1,27 @@
 .menu-container {
-    color: purple
+    color: rgb(240, 174, 240)
 }
+
+.menu-items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    padding: 0rem 8rem;
+
+}
+
+.menu-items-container img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 550px) {
+    /* CSS styles for small screens - less than 550px*/
+
+    .menu-items-container {
+        padding: 0rem 3rem;
+    
+    }
+}
+
+
