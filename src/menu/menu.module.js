@@ -24,28 +24,54 @@ export function createMenuModule () {
     const caesarSaladImage = new Image();
     caesarSaladImage.src = CaesarSalad;
 
+    const caesarSaladOverlay = document.createElement("div");
+    caesarSaladOverlay.textContent = `Grilled Chicken Caesar Salad with exquisite class`;
+
     const tomatoPasta = document.createElement("div");
     const tomatoPastaImage = new Image();
     tomatoPastaImage.src = TomatoPasta;
+
+    const tomatoPastaOverlay = document.createElement("div");
+    tomatoPastaOverlay.textContent = `Creamy Tomato Pasta, straight out of Napoli`;
 
     const marinatedChicken = document.createElement("div");
     const marinatedChickenImage = new Image();
     marinatedChickenImage.src = MarinatedChicken;
 
+    const marinatedChickenOverlay = document.createElement("div");
+    marinatedChickenOverlay.textContent = `Grilled Marinated Chicken dish of Ilonggo`;
+    
+
     const bakedPotatoes = document.createElement("div");
     const bakedPotatoesImage = new Image();
     bakedPotatoesImage.src = BakedPotatoes;
 
+    const bakedPotatoesOverlay = document.createElement("div");
+    bakedPotatoesOverlay.textContent = `Turkish baked Potatoes with Butter and Cheese`;
+
     const saladeNicoise = document.createElement("div");
     const saladeNicoiseImage = new Image();
     saladeNicoiseImage.src = SaladeNicoise;
+
+    const saladeNicoiseOverlay = document.createElement("div");
+    saladeNicoiseOverlay.textContent = `Salade niçoise from french city of Nice`;
 
 
     const bouillabaisse = document.createElement("div");
     const bouillabaisseImage = new Image();
     bouillabaisseImage.src = Bouillabaisse;
 
+    const bouillabaisseOverlay = document.createElement("div");
+    bouillabaisseOverlay.textContent = `Taste Marsielle with the Provençal fish soup Bouillabaisse`;
 
+
+    
+    let itemsArray = [caesarSalad, tomatoPasta, marinatedChicken, 
+        bakedPotatoes, saladeNicoise, bouillabaisse]
+
+    itemsArray.forEach(item => {
+        item.classList.add("menu-item");
+    });
 
     container.appendChild(menuContainer);
 
@@ -54,11 +80,11 @@ export function createMenuModule () {
     menuItemsContainer.append(caesarSalad, tomatoPasta, marinatedChicken, 
         bakedPotatoes, saladeNicoise, bouillabaisse);
 
-    caesarSalad.appendChild(caesarSaladImage);
-    tomatoPasta.appendChild(tomatoPastaImage);
-    marinatedChicken.appendChild(marinatedChickenImage);
-    bakedPotatoes.appendChild(bakedPotatoesImage);
-    saladeNicoise.appendChild(saladeNicoiseImage);
-    bouillabaisse.appendChild(bouillabaisseImage);
+    caesarSalad.append(caesarSaladImage, caesarSaladOverlay);
+    tomatoPasta.append(tomatoPastaImage, tomatoPastaOverlay);
+    marinatedChicken.append(marinatedChickenImage, marinatedChickenOverlay);
+    bakedPotatoes.append(bakedPotatoesImage, bakedPotatoesOverlay);
+    saladeNicoise.append(saladeNicoiseImage, saladeNicoiseOverlay);
+    bouillabaisse.append(bouillabaisseImage, bouillabaisseOverlay);
 }
 
