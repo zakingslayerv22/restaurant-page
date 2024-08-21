@@ -24,15 +24,15 @@ function createHomeModule() {
     const heroText = document.createElement("div");
     heroText.classList.add("hero-text-container");
 
-    const heroH1 = document.createElement("h1");
-    heroH1.classList.add("hero-h1");
-    heroH1.textContent = "Feednotize Me";
+    const heroH2 = document.createElement("h2");
+    heroH2.classList.add("hero-h2");
+    heroH2.textContent = "The Connoisseur's Choice";
 
     const heroParagraph = document.createElement("p");
     heroParagraph.classList.add("hero-paragraph");  
     heroParagraph.textContent = `Since 1970, Feednotize Me has
     been concerned with conjuring meals that has always left
-    even the finest of connoisseurs salivating with wonder."`
+    even the finest of connoisseurs salivating with wonder.`
 
     const heroButton = document.createElement("button");
     heroButton.classList.add("hero-button");
@@ -52,7 +52,7 @@ function createHomeModule() {
     homeContainer.append(heroLeft, heroRight);
     heroLeft.append(heroText, heroButton);
     heroRight.appendChild(heroImage);
-    heroText.append(heroH1, heroParagraph);
+    heroText.append(heroH2, heroParagraph);
 }
 
 createHomeModule()
