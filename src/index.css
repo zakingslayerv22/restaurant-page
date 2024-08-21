@@ -13,9 +13,11 @@ body {
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    justify-content: space-around;
+}
 
+.nav-title {
+    align-self: center;
 }
 
 button {
@@ -33,7 +35,7 @@ nav, .footer {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 2.5rem;
+    padding: 0rem 2.5rem;
 }
 
 .hero-text-container {
@@ -56,4 +58,24 @@ nav, .footer {
 
 #content {
     color: green;
+}
+
+@media screen and (max-width: 550px) {
+    /* CSS styles for small screens - less than 550px*/
+
+
+    nav {    
+        display: grid;
+        place-content: center;
+        gap: 1rem;
+    }
+
+    .nav-title {
+        justify-self: center;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
 }
