@@ -76,6 +76,7 @@ nav, .footer {
 
 .hero-image {
     width: 100%;
+    border-radius: 20px;
 }
 
 
@@ -102,5 +103,15 @@ nav, .footer {
     button {
         font-size: 0.9rem;
         padding: 0.5rem 0.8rem;
+    }
+
+    .hero-button {
+        padding: 0.8rem 1.1rem;
+        font-size: 1.07rem;
+    }
+
+    .hero-left-container {
+        display: grid;
+        text-align: center;
     }
 }
