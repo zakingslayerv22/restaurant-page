@@ -26,7 +26,7 @@ function createHomeModule() {
 
     const heroH2 = document.createElement("h2");
     heroH2.classList.add("hero-h2");
-    heroH2.textContent = "The Connoisseur's Choice";
+    heroH2.textContent = "The Gourmet's Choice";
 
     const heroParagraph = document.createElement("p");
     heroParagraph.classList.add("hero-paragraph");  
