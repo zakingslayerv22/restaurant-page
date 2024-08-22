@@ -106,7 +106,7 @@ nav, .footer {
     nav {    
         display: grid;
         place-content: center;
-        gap: 1rem;
+        gap: 1.85rem;
     }
 
     .nav-title {
