@@ -24,7 +24,7 @@ export function createAboutModule () {
     addressContainer.classList.add("address-container");
 
     const street = document.createElement("div");
-    street.textContent = "Address: 118 Bd Saint-Germain"
+    street.textContent = "Address: 118 Bd Saint-Germain,"
 
     const cityAndCountry = document.createElement("div");
     cityAndCountry.textContent = "Postcode/City/Country: 75006 Paris, France."
